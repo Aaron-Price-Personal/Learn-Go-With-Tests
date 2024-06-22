@@ -1,11 +1,11 @@
 package iteration
 
-const repeatedCount = 5
-
-func Repeat(toRepeat string) string {
-	repeatedOut := ""
-	for i := 0; i < repeatedCount; i++ {
+func Repeat(toRepeat string, amount int) string {
+	var repeatedOut string
+	for i := 0; i < amount; i++ {
 		repeatedOut += toRepeat
 	}
 	return repeatedOut
+
+	// return strings.Repeat(toRepeat, amount)
 }
